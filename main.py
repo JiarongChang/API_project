@@ -5,7 +5,7 @@ url = 'https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0003-001?Authorizati
 html_content = requests.get(url) # html的內容(物件) = 此網址 (呼叫get方法)
 # 將內容轉為JSON
 json_content = html_content.json() # json的內容(物件) = html的內容(物件)呼叫get方法 (將內容轉為json)
-# print(json_content)
+print(json_content)
 
 records = json_content.get('records')
 location = records.get('location')

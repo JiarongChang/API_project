@@ -7,6 +7,7 @@ class Location:
         self.station_id = station_id
         self.time = time
         self.weather_element = weather_element
+        print(" ")
 
     # 傳入JSON資料，設定屬性的值
     def from_json(self, json_data):
